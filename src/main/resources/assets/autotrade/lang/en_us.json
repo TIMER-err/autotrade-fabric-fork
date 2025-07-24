@@ -1,0 +1,15 @@
+{
+    "autotrade.gui.button.config_gui.generic": "Generic",
+    "autotrade.gui.button.config_gui.hotkeys": "Hotkeys",
+    "autotrade.gui.button.config_gui.toggles": "Toggles",
+
+    "autotrade.gui.title.configs": "AutoTrade",
+
+    "autotrade.message.toggled_mod_off": "Toggled Auto Trade §cOFF",
+    "autotrade.message.toggled_mod_on": "Toggled Auto Trade §aON",
+
+    "autotrade.message.sell_item_set": "Item to sell: %s",
+    "autotrade.message.buy_item_set": "Item to buy: %s",
+    "autotrade.message.input_container_set": "Input Container now at: %d %d %d",
+    "autotrade.message.output_container_set": "Output Container now at: %d %d %d"
+}

@@ -1,0 +1,63 @@
+plugins {
+	id 'fabric-loom' version "${loom_version}"
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+	maven { url 'https://masa.dy.fi/maven' }
+	maven { url 'https://maven.terraformersmc.com/releases/' }
+	maven { url 'https://jitpack.io' }
+	flatDir {
+		dirs '.'
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:${project.mappings_version}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
+	modImplementation "com.github.sakura-ryoko:malilib:${project.minecraft_version_out}-${project.malilib_version}"
+	modCompileOnly "com.terraformersmc:modmenu:${project.mod_menu_version}"
+}
+
+base {
+	archivesName = project.mod_file_name + '-' + project.minecraft_version_out
+}
+
+processResources {
+	inputs.property "mod_version", project.mod_version
+
+	filesMatching("fabric.mod.json") {
+		expand([
+				"mod_version"          : project.version,
+				"minecraft_version_min": project.property("minecraft_version_min"),
+				"malilib_version"   : project.property("malilib_version")
+		])
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 21
+}
+
+java {
+	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+	// if it is present.
+	// If you remove this line, sources will not be generated.
+	withSourcesJar()
+
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+}
+
+jar {
+	inputs.property "archivesName", project.base.archivesName
+
+	from("LICENSE") {
+		rename { "${it}_${inputs.properties.archivesName}"}
+	}
+}

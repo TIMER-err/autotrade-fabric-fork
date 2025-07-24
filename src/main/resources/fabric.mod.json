@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "autotrade",
+	"name": "Auto Trade",
+	"version": "${mod_version}",
+
+	"description": "AFK trade with villagers",
+	"authors": [
+		"sebseb7"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/autotrade-fabric",
+		"issues": "https://github.com/sebseb7/autotrade-fabric/issues",
+		"sources": "https://github.com/sebseb7/autotrade-fabric"
+	},
+
+	"license": "0BSD",
+	"icon": "assets/autotrade/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.github.sebseb7.autotrade.AutoTrade"
+		],
+		"modmenu": [
+			"com.github.sebseb7.autotrade.compat.modmenu.ModMenuImpl"
+		]
+	},
+
+	"mixins": [
+	],
+
+	"depends": {
+		"minecraft": ">=${minecraft_version_min}",
+		"malilib": ">=${malilib_version}"
+	}
+}
