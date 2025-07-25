@@ -1,11 +1,16 @@
 name: Build
 on:
   release:
-    types: [created]  # 仅在 release 创建时触发
+    types: [ created ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+      id-token: write
+
     steps:
       - uses: actions/checkout@v4
       - name: Set up JDK 21
@@ -18,32 +23,24 @@ jobs:
       - name: Execute Gradle build
         run: ./gradlew build
 
-      # 明确获取主 JAR 文件
       - name: Get main jar filename
         id: main-jar
         run: |
-          # 查找不包含 "-sources" 的 JAR
           jar_file=$(ls build/libs/*.jar | grep -v -- "-sources" | head -n1)
           echo "main_jar=$(basename "$jar_file")" >> $GITHUB_ENV
           echo "main_jar_path=$jar_file" >> $GITHUB_ENV
 
-      # 生成 MD5 校验和
       - name: Generate checksums
-        run: |
-          md5sum ${{ env.main_jar_path }} > md5sum.txt
+        run: md5sum ${{ env.main_jar_path }} > md5sum.txt
 
-      # 分别上传主 JAR 和源代码 JAR
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ env.main_jar }}
           path: ${{ env.main_jar_path }}
-
       - uses: actions/upload-artifact@v4
-        if: ${{ success() }}
         with:
           name: sources-jar
           path: build/libs/*-sources.jar
-
       - uses: actions/upload-artifact@v4
         with:
           name: md5sum.txt
@@ -57,3 +54,5 @@ jobs:
             ${{ env.main_jar_path }}
             build/libs/*-sources.jar
             md5sum.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
