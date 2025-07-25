@@ -1,6 +1,8 @@
 name: Build
 on:
-  push:
+  release:
+    types: [created]  # 仅在 release 创建时触发
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,7 +14,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: Setup Gradle
-        uses: gradle/gradle-build-action@v3
+        uses: gradle/actions/setup-gradle@v4
       - name: Execute Gradle build
         run: ./gradlew build
 
@@ -29,8 +31,6 @@ jobs:
       - name: Generate checksums
         run: |
           md5sum ${{ env.main_jar_path }} > md5sum.txt
-          # 如果需要包含源代码 JAR
-          # md5sum build/libs/*.jar > md5sum.txt
 
       # 分别上传主 JAR 和源代码 JAR
       - uses: actions/upload-artifact@v4
