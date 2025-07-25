@@ -11,5 +11,74 @@
     "autotrade.message.sell_item_set": "Item to sell: %s",
     "autotrade.message.buy_item_set": "Item to buy: %s",
     "autotrade.message.input_container_set": "Input Container now at: %d %d %d",
-    "autotrade.message.output_container_set": "Output Container now at: %d %d %d"
+    "autotrade.message.output_container_set": "Output Container now at: %d %d %d",
+
+    "autotrade.config.configs.enabled.name": "enabled",
+    "autotrade.config.configs.enabled.comment": "Do auto trading with villagers in range",
+
+    "autotrade.config.configs.enablesell.name": "enableSell",
+    "autotrade.config.configs.enablesell.comment": "Enable selling (if disabled emeralds are taken from the input container)",
+
+    "autotrade.config.configs.sellitem.name": "sellItem",
+    "autotrade.config.configs.sellitem.comment": "The item to sell for emerald.",
+
+    "autotrade.config.configs.selllimit.name": "sellLimit",
+    "autotrade.config.configs.selllimit.comment": "max price to sell for",
+
+    "autotrade.config.configs.enablebuy.name": "enableBuy",
+    "autotrade.config.configs.enablebuy.comment": "Enable buying (if disabled emeralds are placed in the output container)",
+
+    "autotrade.config.configs.buyitem.name": "buyItem",
+    "autotrade.config.configs.buyitem.comment": "The item to buy using emerald.",
+
+    "autotrade.config.configs.buylimit.name": "buyLimit",
+    "autotrade.config.configs.buylimit.comment": "max price to buy for",
+
+    "autotrade.config.configs.maxinputstacks.name": "maxInputStacks",
+    "autotrade.config.configs.maxinputstacks.comment": "stacks to take from input container (or emerald container in buy-only mode)",
+
+    "autotrade.config.configs.inputcontainerx.name": "inputContainerX",
+    "autotrade.config.configs.inputcontainerx.comment": "Input container X (not used when sell disabled)",
+
+    "autotrade.config.configs.inputcontainery.name": "inputContainerY",
+    "autotrade.config.configs.inputcontainery.comment": "Input container Y (not used when sell disabled)",
+
+    "autotrade.config.configs.inputcontainerz.name": "inputContainerZ",
+    "autotrade.config.configs.inputcontainerz.comment": "Input container Z (not used when sell disabled)",
+
+    "autotrade.config.configs.outputcontainerx.name": "outputContainerX",
+    "autotrade.config.configs.outputcontainerx.comment": "Output container X (not used when buy disabled)",
+
+    "autotrade.config.configs.outputcontainery.name": "outputContainerY",
+    "autotrade.config.configs.outputcontainery.comment": "Output container Y (not used when buy disabled)",
+
+    "autotrade.config.configs.outputcontainerz.name": "outputContainerZ",
+    "autotrade.config.configs.outputcontainerz.comment": "Output container Z (not used when buy disabled)",
+
+    "autotrade.config.configs.voidtradingdelay.name": "voidTradingDelay",
+    "autotrade.config.configs.voidtradingdelay.comment": "delay in ticks for void trading",
+
+    "autotrade.config.configs.delayafterteleport.name": "delayAfterTeleport",
+    "autotrade.config.configs.delayafterteleport.comment": "true: Start the delay after the villager was unloaded; false: Start the delay after the trade has been initiated",
+
+    "autotrade.config.configs.containerclosedelay.name": "containerCloseDelay",
+    "autotrade.config.configs.containerclosedelay.comment": "delay in ticks; to get signal from trapped chest",
+
+    "autotrade.config.hotkeys.toggletrading.name": "toggleTrading",
+    "autotrade.config.hotkeys.toggletrading.comment": "Enables / disables auto trading",
+
+    "autotrade.config.hotkeys.setsellitem.name": "setSellItem",
+    "autotrade.config.hotkeys.setsellitem.comment": "Sets the item to sell from hotbar",
+
+    "autotrade.config.hotkeys.setbuyitem.name": "setBuyItem",
+    "autotrade.config.hotkeys.setbuyitem.comment": "Sets the item to buy from hotbar",
+
+    "autotrade.config.hotkeys.setinputcontainer.name": "setInputContainer",
+    "autotrade.config.hotkeys.setinputcontainer.comment": "Sets the input (item to sell) container",
+
+    "autotrade.config.hotkeys.setoutputcontainer.name": "setOutputContainer",
+    "autotrade.config.hotkeys.setoutputcontainer.comment": "Sets the output (item to buy) container",
+
+    "autotrade.config.hotkeys.openguisettings.name": "openGuiSettings",
+    "autotrade.config.hotkeys.openguisettings.comment": "Open the Config GUI"
 }

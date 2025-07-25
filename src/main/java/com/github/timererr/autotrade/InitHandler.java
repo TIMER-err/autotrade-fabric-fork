@@ -1,8 +1,8 @@
-package com.github.sebseb7.autotrade;
+package com.github.timererr.autotrade;
 
-import com.github.sebseb7.autotrade.config.Configs;
-import com.github.sebseb7.autotrade.event.InputHandler;
-import com.github.sebseb7.autotrade.event.KeybindCallbacks;
+import com.github.timererr.autotrade.config.Configs;
+import com.github.timererr.autotrade.event.InputHandler;
+import com.github.timererr.autotrade.event.KeybindCallbacks;
 import fi.dy.masa.malilib.config.ConfigManager;
 import fi.dy.masa.malilib.config.options.ConfigString;
 import fi.dy.masa.malilib.event.InputEventHandler;

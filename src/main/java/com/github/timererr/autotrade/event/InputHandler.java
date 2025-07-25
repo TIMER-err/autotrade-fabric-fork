@@ -1,7 +1,7 @@
-package com.github.sebseb7.autotrade.event;
+package com.github.timererr.autotrade.event;
 
-import com.github.sebseb7.autotrade.Reference;
-import com.github.sebseb7.autotrade.config.Hotkeys;
+import com.github.timererr.autotrade.Reference;
+import com.github.timererr.autotrade.config.Hotkeys;
 import fi.dy.masa.malilib.hotkeys.IHotkey;
 import fi.dy.masa.malilib.hotkeys.IKeybindManager;
 import fi.dy.masa.malilib.hotkeys.IKeybindProvider;

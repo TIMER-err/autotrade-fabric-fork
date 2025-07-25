@@ -1,0 +1,84 @@
+{
+  "autotrade.gui.button.config_gui.generic": "通用设置",
+  "autotrade.gui.button.config_gui.hotkeys": "快捷键",
+  "autotrade.gui.button.config_gui.toggles": "开关选项",
+
+  "autotrade.gui.title.configs": "自动交易",
+
+  "autotrade.message.toggled_mod_off": "自动交易已切换为 §c关闭",
+  "autotrade.message.toggled_mod_on": "自动交易已切换为 §a开启",
+
+  "autotrade.message.sell_item_set": "出售物品已设为: %s",
+  "autotrade.message.buy_item_set": "购买物品已设为: %s",
+  "autotrade.message.input_container_set": "输入容器位置已设为: %d %d %d",
+  "autotrade.message.output_container_set": "输出容器位置已设为: %d %d %d",
+
+  "autotrade.config.configs.enabled.name": "启用自动交易",
+  "autotrade.config.configs.enabled.comment": "与范围内的村民进行自动交易",
+
+  "autotrade.config.configs.enablesell.name": "启用出售",
+  "autotrade.config.configs.enablesell.comment": "启用出售功能 (若禁用，绿宝石将从输入容器中取出)",
+
+  "autotrade.config.configs.sellitem.name": "出售物品",
+  "autotrade.config.configs.sellitem.comment": "用于换取绿宝石的物品。",
+
+  "autotrade.config.configs.selllimit.name": "出售价格上限",
+  "autotrade.config.configs.selllimit.comment": "出售物品的最高可接受价格 (绿宝石数量)",
+
+  "autotrade.config.configs.enablebuy.name": "启用购买",
+  "autotrade.config.configs.enablebuy.comment": "启用购买功能 (若禁用，绿宝石将被放入输出容器)",
+
+  "autotrade.config.configs.buyitem.name": "购买物品",
+  "autotrade.config.configs.buyitem.comment": "使用绿宝石购买的物品。",
+
+  "autotrade.config.configs.buylimit.name": "购买价格上限",
+  "autotrade.config.configs.buylimit.comment": "购买物品的最高可接受价格 (绿宝石数量)",
+
+  "autotrade.config.configs.maxinputstacks.name": "最大输入堆叠数",
+  "autotrade.config.configs.maxinputstacks.comment": "从输入容器中取出的最大堆叠数 (或在仅购买模式下，从绿宝石容器中取出的堆叠数)",
+
+  "autotrade.config.configs.inputcontainerx.name": "输入容器X坐标",
+  "autotrade.config.configs.inputcontainerx.comment": "输入容器 X 坐标 (当出售禁用时无效)",
+
+  "autotrade.config.configs.inputcontainery.name": "输入容器Y坐标",
+  "autotrade.config.configs.inputcontainery.comment": "输入容器 Y 坐标 (当出售禁用时无效)",
+
+  "autotrade.config.configs.inputcontainerz.name": "输入容器Z坐标",
+  "autotrade.config.configs.inputcontainerz.comment": "输入容器 Z 坐标 (当出售禁用时无效)",
+
+  "autotrade.config.configs.outputcontainerx.name": "输出容器X坐标",
+  "autotrade.config.configs.outputcontainerx.comment": "输出容器 X 坐标 (当购买禁用时无效)",
+
+  "autotrade.config.configs.outputcontainery.name": "输出容器Y坐标",
+  "autotrade.config.configs.outputcontainery.comment": "输出容器 Y 坐标 (当购买禁用时无效)",
+
+  "autotrade.config.configs.outputcontainerz.name": "输出容器Z坐标",
+  "autotrade.config.configs.outputcontainerz.comment": "输出容器 Z 坐标 (当购买禁用时无效)",
+
+  "autotrade.config.configs.voidtradingdelay.name": "虚空交易延迟",
+  "autotrade.config.configs.voidtradingdelay.comment": "进行虚空交易的延迟 (刻)",
+
+  "autotrade.config.configs.delayafterteleport.name": "传送后开始延迟",
+  "autotrade.config.configs.delayafterteleport.comment": "true: 在村民被卸载后开始延迟计时; false: 在交易发起后开始延迟计时",
+
+  "autotrade.config.configs.containerclosedelay.name": "容器关闭延迟",
+  "autotrade.config.configs.containerclosedelay.comment": "容器关闭后的延迟 (刻); 用于获取陷阱箱的信号",
+
+  "autotrade.config.hotkeys.toggletrading.name": "开关自动交易",
+  "autotrade.config.hotkeys.toggletrading.comment": "启用/禁用自动交易",
+
+  "autotrade.config.hotkeys.setsellitem.name": "设置出售物品",
+  "autotrade.config.hotkeys.setsellitem.comment": "将快捷栏中选中的物品设为出售物品",
+
+  "autotrade.config.hotkeys.setbuyitem.name": "设置购买物品",
+  "autotrade.config.hotkeys.setbuyitem.comment": "将快捷栏中选中的物品设为购买物品",
+
+  "autotrade.config.hotkeys.setinputcontainer.name": "设置输入容器",
+  "autotrade.config.hotkeys.setinputcontainer.comment": "设置输入容器 (存放出售物品的容器)",
+
+  "autotrade.config.hotkeys.setoutputcontainer.name": "设置输出容器",
+  "autotrade.config.hotkeys.setoutputcontainer.comment": "设置输出容器 (存放购买物品的容器)",
+
+  "autotrade.config.hotkeys.openguisettings.name": "打开配置界面",
+  "autotrade.config.hotkeys.openguisettings.comment": "打开配置图形用户界面 (GUI)"
+}

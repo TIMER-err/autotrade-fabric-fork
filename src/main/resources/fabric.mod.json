@@ -6,12 +6,12 @@
 
 	"description": "AFK trade with villagers",
 	"authors": [
-		"sebseb7"
+		"[Old]sebseb7, TIMER_err , ShiraMorina"
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/autotrade-fabric",
-		"issues": "https://github.com/sebseb7/autotrade-fabric/issues",
-		"sources": "https://github.com/sebseb7/autotrade-fabric"
+		"issues": "https://github.com/TIMER-err/autotrade-fabric-fork/issues",
+		"sources": "https://github.com/TIMER-err/autotrade-fabric-fork"
 	},
 
 	"license": "0BSD",
@@ -19,10 +19,10 @@
 	"environment": "client",
 	"entrypoints": {
 		"main": [
-			"com.github.sebseb7.autotrade.AutoTrade"
+			"com.github.timererr.autotrade.AutoTrade"
 		],
 		"modmenu": [
-			"com.github.sebseb7.autotrade.compat.modmenu.ModMenuImpl"
+			"com.github.timererr.autotrade.compat.modmenu.ModMenuImpl"
 		]
 	},
 

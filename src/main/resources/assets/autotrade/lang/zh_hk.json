@@ -1,0 +1,84 @@
+{
+  "autotrade.gui.button.config_gui.generic": "基本设定",
+  "autotrade.gui.button.config_gui.hotkeys": "快捷键",
+  "autotrade.gui.button.config_gui.toggles": "开关掣",
+
+  "autotrade.gui.title.configs": "自动交易",
+
+  "autotrade.message.toggled_mod_off": "自动交易已 §c闩咗",
+  "autotrade.message.toggled_mod_on": "自动交易已 §a开咗",
+
+  "autotrade.message.sell_item_set": "要卖嘅嘢：%s",
+  "autotrade.message.buy_item_set": "要买嘅嘢：%s",
+  "autotrade.message.input_container_set": "入货箱位置：%d %d %d",
+  "autotrade.message.output_container_set": "出货箱位置：%d %d %d",
+
+  "autotrade.config.configs.enabled.name": "启用自动交易",
+  "autotrade.config.configs.enabled.comment": "同范围内村民做自动交易",
+
+  "autotrade.config.configs.enablesell.name": "启用卖嘢",
+  "autotrade.config.configs.enablesell.comment": "开卖嘢功能（如果闩咗，绿宝石会由入货箱拎）",
+
+  "autotrade.config.configs.sellitem.name": "卖出物品",
+  "autotrade.config.configs.sellitem.comment": "用来换绿宝石嘅物品",
+
+  "autotrade.config.configs.selllimit.name": "最高卖价",
+  "autotrade.config.configs.selllimit.comment": "卖嘢最高接受几多粒绿宝石",
+
+  "autotrade.config.configs.enablebuy.name": "启用买嘢",
+  "autotrade.config.configs.enablebuy.comment": "开买嘢功能（如果闩咗，绿宝石会放入出货箱）",
+
+  "autotrade.config.configs.buyitem.name": "买入物品",
+  "autotrade.config.configs.buyitem.comment": "用绿宝石买嘅物品",
+
+  "autotrade.config.configs.buylimit.name": "最高买价",
+  "autotrade.config.configs.buylimit.comment": "买嘢最高接受几多粒绿宝石",
+
+  "autotrade.config.configs.maxinputstacks.name": "最大入货量",
+  "autotrade.config.configs.maxinputstacks.comment": "从入货箱拎几多组嘢（或者净系买嘢模式时嘅绿宝石箱）",
+
+  "autotrade.config.configs.inputcontainerx.name": "入货箱X坐标",
+  "autotrade.config.configs.inputcontainerx.comment": "入货箱X位置（闩咗卖嘢功能时冇用）",
+
+  "autotrade.config.configs.inputcontainery.name": "入货箱Y坐标",
+  "autotrade.config.configs.inputcontainery.comment": "入货箱Y位置（闩咗卖嘢功能时冇用）",
+
+  "autotrade.config.configs.inputcontainerz.name": "入货箱Z坐标",
+  "autotrade.config.configs.inputcontainerz.comment": "入货箱Z位置（闩咗卖嘢功能时冇用）",
+
+  "autotrade.config.configs.outputcontainerx.name": "出货箱X坐标",
+  "autotrade.config.configs.outputcontainerx.comment": "出货箱X位置（闩咗买嘢功能时冇用）",
+
+  "autotrade.config.configs.outputcontainery.name": "出货箱Y坐标",
+  "autotrade.config.configs.outputcontainery.comment": "出货箱Y位置（闩咗买嘢功能时冇用）",
+
+  "autotrade.config.configs.outputcontainerz.name": "出货箱Z坐标",
+  "autotrade.config.configs.outputcontainerz.comment": "出货箱Z位置（闩咗买嘢功能时冇用）",
+
+  "autotrade.config.configs.voidtradingdelay.name": "虚空交易延迟",
+  "autotrade.config.configs.voidtradingdelay.comment": "虚空交易等几耐（tick）",
+
+  "autotrade.config.configs.delayafterteleport.name": "传送后计时",
+  "autotrade.config.configs.delayafterteleport.comment": "true: 村民unload后开始计时；false: 交易开始后计时",
+
+  "autotrade.config.configs.containerclosedelay.name": "关箱延迟",
+  "autotrade.config.configs.containerclosedelay.comment": "等几耐先关箱（tick）；用来收 trapped chest 信号",
+
+  "autotrade.config.hotkeys.toggletrading.name": "开关自动交易",
+  "autotrade.config.hotkeys.toggletrading.comment": "开或者闩自动交易",
+
+  "autotrade.config.hotkeys.setsellitem.name": "设定卖出物品",
+  "autotrade.config.hotkeys.setsellitem.comment": "将快捷栏拣嘅物品设成要卖嘅嘢",
+
+  "autotrade.config.hotkeys.setbuyitem.name": "设定买入物品",
+  "autotrade.config.hotkeys.setbuyitem.comment": "将快捷栏拣嘅物品设成要买嘅嘢",
+
+  "autotrade.config.hotkeys.setinputcontainer.name": "设定入货箱",
+  "autotrade.config.hotkeys.setinputcontainer.comment": "设定入货箱（放要卖嘅嘢嘅箱）",
+
+  "autotrade.config.hotkeys.setoutputcontainer.name": "设定出货箱",
+  "autotrade.config.hotkeys.setoutputcontainer.comment": "设定出货箱（放买到嘅嘢嘅箱）",
+
+  "autotrade.config.hotkeys.openguisettings.name": "打开设定介面",
+  "autotrade.config.hotkeys.openguisettings.comment": "打开设定GUI"
+}

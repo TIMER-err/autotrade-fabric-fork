@@ -1,4 +1,4 @@
-package com.github.sebseb7.autotrade;
+package com.github.timererr.autotrade;
 
 import fi.dy.masa.malilib.event.InitializationHandler;
 import net.fabricmc.api.ModInitializer;

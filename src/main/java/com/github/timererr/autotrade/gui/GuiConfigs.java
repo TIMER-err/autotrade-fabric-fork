@@ -1,8 +1,8 @@
-package com.github.sebseb7.autotrade.gui;
+package com.github.timererr.autotrade.gui;
 
-import com.github.sebseb7.autotrade.Reference;
-import com.github.sebseb7.autotrade.config.Configs;
-import com.github.sebseb7.autotrade.config.Hotkeys;
+import com.github.timererr.autotrade.Reference;
+import com.github.timererr.autotrade.config.Configs;
+import com.github.timererr.autotrade.config.Hotkeys;
 import com.google.common.collect.ImmutableList;
 import fi.dy.masa.malilib.config.IConfigBase;
 import fi.dy.masa.malilib.gui.GuiConfigsBase;

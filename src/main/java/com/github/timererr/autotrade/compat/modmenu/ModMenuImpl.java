@@ -1,6 +1,6 @@
-package com.github.sebseb7.autotrade.compat.modmenu;
+package com.github.timererr.autotrade.compat.modmenu;
 
-import com.github.sebseb7.autotrade.gui.GuiConfigs;
+import com.github.timererr.autotrade.gui.GuiConfigs;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 
